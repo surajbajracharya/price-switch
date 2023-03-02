@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Price Switch Readme</title>
 </head>
 <body>
   <h1>Price Switch Readme</h1>
