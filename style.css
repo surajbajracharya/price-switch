@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pricing-container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-wrap {
+    width: 50%;
+    margin: 0 auto;
+    background: #161D2F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.pricing-container.full-width {
+    width: 100%;
+    max-width: none;
+}
+
+.pricing-switcher {
+    text-align: center;
+    padding: 40px 0px 40px 40px;
+}
+
+.pricing-switcher .fieldset {
+    display: inline-block;
+    position: relative;
+    padding: 2px;
+    border-radius: 5px;
+    background: #1F5DD3;
+}
+
+.pricing-switcher input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.pricing-switcher .one {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    color: #3F5C96;
+}
+
+.pricing-switcher .two {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 146px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.pricing-switcher .switch {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 40px;
+    width: 150px;
+    background-color: #ffffff;
+    /* color: #3F5C96; */
+    border-radius: 5px;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.pricing-switcher input[type="radio"]:checked+label+.switch,
+.pricing-switcher input[type="radio"]:checked+label:nth-of-type(n)+.switch {
+    -webkit-transform: translateX(130px);
+    -moz-transform: translateX(160px);
+    -ms-transform: translateX(130px);
+    -o-transform: translateX(130px);
+    transform: translateX(150px);
+}
+
+.pricing-switcher input[type="radio"]:checked+.one {
+    color: #3F5C96;
+}
+
+.pricing-switcher input[type="radio"]+.one {
+    color: #fff;
+}
+
+.pricing-switcher input[type="radio"]:checked+.two {
+    color: #3F5C96;
+}
+
+.pricing-switcher input[type="radio"]+.two {
+    color: #ffffff;
+}
+
+.pricing-switcher input[type="radio"]:checked+label+.switch {
+    color: #ffffff;
+}
+
+.tag {
+    background: #ACF0D4;
+    border-radius: 3px;
+    color: #34B481;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 17px 0 22px;
+    position: relative;
+    margin: 0px 0px 0px 0;
+    text-decoration: none;
+}
+
+.tag::after {
+    background: #161D2F;
+    border-top: 16px solid transparent;
+    border-right: 10px solid #ACF0D4;
+    border-bottom: 14px solid transparent;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
